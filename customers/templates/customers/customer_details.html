@@ -17,13 +17,8 @@
     </style>
 </head>
 <body>
-    <h1> These are all of our customers</h1>
-    {% for customer in customers %}
-        <div class="customer">
-        <a href="/customers/{{ customer.pk }}/ ">{{ customer.first_name }} {{ customer.last_name }}</a>. Phone Number: {{ customer.phone_number }}
-        </div>
-    
-    {% endfor %} 
+    <h1> This is the details of this {{ customer.first_name }} </h1>
+    <p> This persons contact number: {{ customer.phone_number }} </p>
 
 </body>
 
