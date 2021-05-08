@@ -16,10 +16,15 @@
         }
     </style>
 </head>
-<body>
+<<body>
+    <a href="/customers"> Go back to customers</a>
+    <hr />
     <h1> This is the details of this {{ customer.first_name }} </h1>
     <p> This persons contact number: {{ customer.phone_number }} </p>
-
+    <p> The agent for this customer is: {{ customer.agent }}</p>
+    <hr />
+    <a href="/customers/{{ customer.pk }}/update/">Update</a>
+    <a href="/customers/{{ customer.pk }}/delete/">Delete</a>
 </body>
 
 </html>
